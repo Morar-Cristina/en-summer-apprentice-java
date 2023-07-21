@@ -2,10 +2,11 @@ package com.practica.demo.service;
 
 import com.practica.demo.models.Orders;
 import com.practica.demo.repository.OrdersRepository;
-import org.aspectj.weaver.ast.Or;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class OrdersService implements IOrdersService{
 
     private OrdersRepository ordersRepo;

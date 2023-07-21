@@ -2,9 +2,11 @@ package com.practica.demo.service;
 
 import com.practica.demo.models.TicketCategory;
 import com.practica.demo.repository.TicketCategoryRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class TicketCategoryService implements ITicketCategoryService{
 
     private TicketCategoryRepository ticketCategoryRepo;

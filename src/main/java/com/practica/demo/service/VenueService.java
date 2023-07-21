@@ -2,9 +2,11 @@ package com.practica.demo.service;
 
 import com.practica.demo.models.Venue;
 import com.practica.demo.repository.VenueRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class VenueService implements  IVenueService{
 
     private VenueRepository venueRepo;

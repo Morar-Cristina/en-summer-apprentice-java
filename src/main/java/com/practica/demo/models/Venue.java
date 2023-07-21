@@ -10,7 +10,7 @@ public class Venue implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "location_id")
-    private Integer locationId; // Primary key of type Integer
+    private int locationId; // Primary key of type Integer
 
     @Column(name = "location_name", length = 30)
     private String locationName;
@@ -25,11 +25,11 @@ public class Venue implements Serializable {
     public Venue() {
     }
 
-    public Integer getLocationId() {
+    public int getLocationId() {
         return locationId;
     }
 
-    public void setLocationId(Integer locationId) {
+    public void setLocationId(int locationId) {
         this.locationId = locationId;
     }
 

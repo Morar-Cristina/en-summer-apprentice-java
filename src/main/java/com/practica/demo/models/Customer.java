@@ -10,7 +10,7 @@ public class Customer implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "customer_id")
-    private Integer customerId;
+    private int customerId;
 
     @Column(name = "customer_name", length = 50)
     private String customerName;
@@ -22,11 +22,11 @@ public class Customer implements Serializable {
     public Customer() {
     }
 
-    public Integer getCustomerId() {
+    public int getCustomerId() {
         return customerId;
     }
 
-    public void setCustomerId(Integer customerId) {
+    public void setCustomerId(int customerId) {
         this.customerId = customerId;
     }
 

@@ -10,7 +10,7 @@ public class EventType implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "event_type_id")
-    private Integer eventTypeId;
+    private int eventTypeId;
 
     @Column(name = "event_type_name", length = 30, unique = true)
     private String eventTypeName;
@@ -18,11 +18,11 @@ public class EventType implements Serializable {
     public EventType() {
     }
 
-    public Integer getEventTypeId() {
+    public int getEventTypeId() {
         return eventTypeId;
     }
 
-    public void setEventTypeId(Integer eventTypeId) {
+    public void setEventTypeId(int eventTypeId) {
         this.eventTypeId = eventTypeId;
     }
 

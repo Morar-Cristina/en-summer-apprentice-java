@@ -11,7 +11,7 @@ public class Event implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "event_id")
-    private Integer eventId;
+    private int eventId;
 
     @ManyToOne
     @JoinColumn(name = "location_id")
@@ -38,11 +38,11 @@ public class Event implements Serializable {
     public Event() {
     }
 
-    public Integer getEventId() {
+    public int getEventId() {
         return eventId;
     }
 
-    public void setEventId(Integer eventId) {
+    public void setEventId(int eventId) {
         this.eventId = eventId;
     }
 

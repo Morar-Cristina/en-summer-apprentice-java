@@ -16,10 +16,7 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
-<<<<<<< HEAD
 
-=======
->>>>>>> 4690ec180999ae17657e8dd3c00f5a9a61951ceb
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -32,15 +29,12 @@
 		</dependency>
 
 		<dependency>
-<<<<<<< HEAD
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
 
 		<dependency>
-=======
->>>>>>> 4690ec180999ae17657e8dd3c00f5a9a61951ceb
 			<groupId>com.microsoft.sqlserver</groupId>
 			<artifactId>mssql-jdbc</artifactId>
 			<scope>runtime</scope>
@@ -58,7 +52,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-<<<<<<< HEAD
 				<configuration>
 					<excludes>
 						<exclude>
@@ -70,10 +63,4 @@
 			</plugin>
 		</plugins>
 	</build>
-=======
-			</plugin>
-		</plugins>
-	</build>
-
->>>>>>> 4690ec180999ae17657e8dd3c00f5a9a61951ceb
 </project>

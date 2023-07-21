@@ -11,7 +11,7 @@ public class TicketCategory implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ticket_category_id")
-    private Integer ticketCategoryId;
+    private int ticketCategoryId;
 
     @ManyToOne
     @JoinColumn(name = "event_id")
@@ -26,11 +26,11 @@ public class TicketCategory implements Serializable {
     public TicketCategory() {
     }
 
-    public Integer getTicketCategoryId() {
+    public int getTicketCategoryId() {
         return ticketCategoryId;
     }
 
-    public void setTicketCategoryId(Integer ticketCategoryId) {
+    public void setTicketCategoryId(int ticketCategoryId) {
         this.ticketCategoryId = ticketCategoryId;
     }
 

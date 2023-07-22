@@ -27,12 +27,14 @@ public class TicketCategoryController {
     }
 
     @PostMapping("event/{eventID}")
-    public TicketCategory createTicketCategory(@RequestBody TicketCategory ticketCategory, @PathVariable("eventID") int eventID){
+    public TicketCategory createTicketCategory(@RequestBody TicketCategory ticketCategory,
+                                               @PathVariable("eventID") int eventID){
         return this.ticketCategoryCustomService.createTicketCategory(ticketCategory,eventID);
     }
 
     @PutMapping("/{ticketCategoryID}")
-    public TicketCategory updateTicketCategory(@RequestBody TicketCategory ticketCategory, @PathVariable("ticketCategoryID") int ticketCategoryID){
+    public TicketCategory updateTicketCategory(@RequestBody TicketCategory ticketCategory,
+                                               @PathVariable("ticketCategoryID") int ticketCategoryID){
         return this.ticketCategoryCustomService.updateTicketCategory(ticketCategory, ticketCategoryID);
     }
 

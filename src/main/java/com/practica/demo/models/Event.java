@@ -3,6 +3,7 @@ package com.practica.demo.models;
 import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "event")
@@ -41,6 +42,8 @@ public class Event implements Serializable {
     public int getEventId() {
         return eventId;
     }
+
+
 
     public void setEventId(int eventId) {
         this.eventId = eventId;
@@ -93,4 +96,5 @@ public class Event implements Serializable {
     public void setEndDate(Date endDate) {
         this.endDate = endDate;
     }
+
 }
